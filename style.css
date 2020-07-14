@@ -2,13 +2,14 @@ body {
 	background-color: blue;
 }
 
-div {
+nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 300px;
 }
 
-h1 {
+nav h1 {
 	font-family: sans-serif;
 	color: white;
 	font-size: 100px;
