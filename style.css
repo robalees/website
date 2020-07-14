@@ -1,3 +1,15 @@
 body {
 	background-color: blue;
 }
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: sans-serif;
+	color: white;
+	font-size: 100px;
+}
