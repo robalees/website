@@ -38,3 +38,22 @@ nav h2 {
 	justify-self: center;
 	padding: 0 0 1em 0;
 }
+
+@media only screen 
+  and (max-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
