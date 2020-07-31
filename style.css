@@ -30,13 +30,15 @@ nav h2 {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2em 2em;
 }
 
 .module {
-	max-height: 100%;
-	max-width: auto;
-	justify-self: center;
-	padding: 0 0 1em 0;
+	align-self: center;
+}
+
+img {
+	max-width: 100%;
 }
 
 @media only screen 
@@ -55,5 +57,11 @@ nav h2 {
   and (orientation: portrait) {
 	.grid {
 		grid-template-columns: 1fr;
+	}
+	.module {
+		place-self: center;
+	}
+	img {
+		max-width: 75%;
 	}
 }
