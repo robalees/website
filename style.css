@@ -4,13 +4,13 @@ body {
 	margin: 0 auto;
 }
 
-nav {
+header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 120px;
-	padding: 0 0 1em 0;
+	padding: 1em 0 1em 0;
 }
 
 nav h1 {
@@ -59,6 +59,7 @@ img {
   and (orientation: portrait) {
 	nav {
 		height: auto;
+		padding-top: 4em;
 	}
 		
 	nav h1 {
