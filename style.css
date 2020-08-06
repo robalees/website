@@ -13,14 +13,14 @@ header {
 	padding: 1em 0 1em 0;
 }
 
-nav h1 {
+header h1 {
 	color: #f09563;
 	font-size: 4em;
 	font-weight: 900;
 	margin: 0;
 }
 
-nav h2 {
+header h2 {
 	color: #163c66;
 	font-size: 2em;
 	font-weight: 400;
