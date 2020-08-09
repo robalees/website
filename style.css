@@ -4,7 +4,7 @@ body {
 	margin: 0 auto;
 }
 
-header {
+.title {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -13,14 +13,14 @@ header {
 	padding: 1em 0 1em 0;
 }
 
-header h1 {
+.title h1 {
 	color: #f09563;
 	font-size: 4em;
 	font-weight: 900;
 	margin: 0;
 }
 
-header h2 {
+.title h2 {
 	color: #163c66;
 	font-size: 2em;
 	font-weight: 400;
@@ -32,6 +32,17 @@ header h2 {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 1.5em 1.5em;
 	padding: 1.5em;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+nav a {
+	padding: 0 1.5em 0 1.5em;
 }
 
 .module {
@@ -105,52 +116,61 @@ img {
 }
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   	.grid {
   		grid-template-columns: 1fr 1fr 1fr 1fr;
   	}
-}
+}*/
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
   	.grid {
   		grid-template-columns: 1fr 1fr 1fr 1fr;
   	}
-}
+}*/
 
 /* ----------- iPad Pro 10.5" ----------- */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 834px) 
   and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	.grid {
   		grid-template-columns: 1fr 1fr 1fr 1fr;
   	}
-}
+}*/
 
 /* ----------- iPad Pro 12.9" ----------- */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	.grid {
   		grid-template-columns: 1fr 1fr 1fr 1fr;
   	}
-}
+}*/
 
 /* ----------- Retina Screens ----------- */
-@media screen 
+/*@media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
   	.grid {
   		grid-template-columns: 1fr 1fr 1fr 1fr;
+  	}
+}*/
+
+/* ----------- Width not device width ----------- */
+@media only screen 
+  and (min-width: 200px) 
+  and (max-width: 800px) { 
+  	.grid {
+  		grid-template-columns: 1fr 1fr;
   	}
 }
