@@ -4,34 +4,53 @@ body {
 	margin: 0 auto;
 }
 
-.title {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 120px;
-	padding: 1em 0 1em 0;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
 }
 
-.title h1 {
-	color: #f09563;
-	font-size: 4em;
-	font-weight: 900;
-	margin: 0;
+.logo {
+  width: 5em;
+  height: auto;
 }
 
-.title h2 {
-	color: #163c66;
-	font-size: 2em;
-	font-weight: 400;
-	margin: 0;
+svg {
+  clip-path: circle(49% at 50% 50%);
+  -webkit-clip-path: circle(49% at 50% 50%);
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 1.5em 1.5em;
-	padding: 1.5em;
+.bgclass {
+  fill: #95b8d1;
+}
+
+.towerclass {
+  fill: black;
+}
+
+#cloud {
+  animation: nudge 10s linear normal;
+  animation-iteration-count: infinite;
+  fill: white;
+}
+
+@keyframes nudge {
+  0% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
+
+h1 {
+  padding: 0 0 0 0.25em;
+  margin: 0;
+  font-family: "Chivo", sans-serif;
+  font-size: 2em;
+  line-height: 1em;
 }
 
 nav {
@@ -45,6 +64,13 @@ nav a {
 	padding: 0 1.5em 0 1.5em;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5em 1.5em;
+  padding: 1.5em;
+}
+
 .module {
 	object-fit: cover;
 }
@@ -52,6 +78,35 @@ nav a {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* Safari/Animation fix */
+
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    #cloud {
+      animation: none;
+    }
+  }
+}
+
+/* Safari 10.1 */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (not (stroke-color: transparent)) {
+    #cloud {
+      animation: none;
+    }
+  }
+}
+
+/* Safari 6.1-10.0 (not 10.1) */
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+  @media {
+    #cloud {
+      animation: none;
+    }
+  }
 }
 
 @media only screen  
