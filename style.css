@@ -128,6 +128,22 @@ img {
   	.grid {
   		grid-template-columns: 1fr 1fr;
   	}
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .logo {
+      width: 50%;
+      height: auto;
+    }
+    h1 {
+      padding: 0.25em 0;
+      font-size: 6em;
+      line-height: 1em;
+      text-align: center;
+    }
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -148,6 +164,22 @@ img {
   	.grid {
   		grid-template-columns: 1fr 1fr;
   	}
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      width: 50%;
+      height: auto;
+    }
+    h1 {
+      padding: 0.25em 0;
+      font-size: 6em;
+      line-height: 1em;
+      text-align: center;
+    }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -168,6 +200,22 @@ img {
   	.grid {
   		grid-template-columns: 1fr 1fr;
   	}
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      width: 50%;
+      height: auto;
+    }
+    h1 {
+      padding: 0.25em 0;
+      font-size: 6em;
+      line-height: 1em;
+      text-align: center;
+    }
 }
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
