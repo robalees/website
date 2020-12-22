@@ -60,8 +60,15 @@ nav {
 	justify-content: center;
 }
 
+nav li {
+  list-style-type: none;
+/*   width: 50px;
+  outline: solid green; */
+}
+
 nav a {
 	padding: 0 1.5em 0 1.5em;
+  text-decoration: none;
 }
 
 .grid {
