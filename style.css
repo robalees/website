@@ -1,8 +1,10 @@
 body {
-	background-color: #DF3B57;
+	background-color: #457b9d;
 	font-family: 'Rubik', sans-serif;
-	margin: 0 auto;
+	margin: 0;
 }
+
+/* Header and logo */
 
 .container {
   display: flex;
@@ -46,30 +48,38 @@ svg {
 }
 
 h1 {
-  padding: 0 0 0 0.25em;
+  padding: 0 0 0 0.5em;
   margin: 0;
   font-family: "Chivo", sans-serif;
   font-size: 2em;
   line-height: 1em;
 }
 
-nav {
+/* Navigation */
+
+.navigation {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-}
-
-nav li {
   list-style-type: none;
-/*   width: 50px;
-  outline: solid green; */
+  border:1px solid #000;
 }
 
-nav a {
-	padding: 0 1.5em 0 1.5em;
-  text-decoration: none;
+.navigation > li {
+  border:1px solid #000;
+  width: 100px;
+  text-align: center;
 }
+
+.navigation > li > a {
+  text-decoration: none;
+  font-family: "Chivo", sans-serif;
+  font-size: 1em;
+}
+
+
+/* Grid for gallery */
 
 .grid {
   display: grid;
